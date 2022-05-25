@@ -18,7 +18,7 @@ const DefaultPort = 25565
 // A Listener is a minecraft Listener
 type Listener struct{ net.Listener }
 //本人新加
-func toMC(addr string,ip string) (*Listener, error) {
+func ToMC(addr string,ip string) (*Listener, error) {
 	raddr, err := net.ResolveTCPAddr("tcp", target)
 	if err != nil {
 		return nil, err
